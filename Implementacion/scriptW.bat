@@ -1,0 +1,13 @@
+echo Copiando utilidades...
+xcopy .\TrabajoUY_Utilidades %userprofile%\TrabajoUY_Utilidades /E /I
+echo Utilidades copiadas...
+
+echo Creando jar del Servidor Central...
+cd ./ServidorCentral
+call mvn install
+echo Jar creado con exito
+
+echo Creando war del Servidor Web...
+cd ../ServidorWeb
+call mvn install
+echo War creado con exito

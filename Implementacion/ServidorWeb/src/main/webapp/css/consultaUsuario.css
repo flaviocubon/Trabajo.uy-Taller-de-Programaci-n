@@ -1,0 +1,128 @@
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+
+#submitBtn{
+  padding-top: 20px;
+}
+.cardUsuario{
+  width: auto;
+  height: 555;
+}
+.user{
+  padding-top: 20px;
+}
+
+.body-postUsuario{
+  height: auto;
+}
+
+.user-list {
+    max-height: 800px;
+    overflow-y: auto;
+    background-color: #3670ec;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.user-card {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+.user-card:hover {
+  background-color: #e0e0e0; /* Cambia el color de fondo al pasar sobre el usuario */
+}
+.user-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+.user-info {
+    flex-grow: 1;
+    font-size: 18px;
+}
+.user-info ul {
+  list-style: none;
+  padding: 0;
+}
+.user-info li {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+.job-list {
+  list-style: none;
+  padding: 0;
+  background-color: #e6f7ff;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+  width: 90%;
+}
+.job-list-title {
+  background-color: #3498db; 
+  color: #ffffff; 
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  width: 90%;
+}
+.job-list-item {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-list-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.containerUsers{
+  align-content: center;
+  width: 100%;
+}
+
+.btnSiguiendo{
+	color: blue;
+	border: 2px solid #0d6efd;
+	width: 100px;
+}
+
+.btnSeg{
+	position: relative;
+	width: 100px;
+}
+
+.linkCard{
+	&::after{
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+.detalleOferta {
+  list-style: none;
+  padding: 0;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+}

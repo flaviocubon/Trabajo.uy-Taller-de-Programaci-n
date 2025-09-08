@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfilPropioPostulante</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../css/estilosGenericos.css">
+    <link rel="stylesheet" href="../css/perfilUsuario.css">
+    <script src="../js/jsGenerico.js"></script>
+    <script src="../js/perfilUsuario.js"></script>
+</head>
+
+<body class="bg-primary-subtle body-center">
+    <header>
+        <nav class="navbar-custom navbar navbar-expand-lg navbar-dark custom-shadow sticky-top" id="navbar-text">
+            <a class="navbar-brand" href="indexLoggeadoPostulante.html">
+                <i class="bi bi-bag-fill" id="logo"></i>
+                <strong> Trabajo.uy </strong>
+            </a>
+            <div class="user-info-2">
+                <div id="user-dropdown-toggle" class="user-toggle">
+                    <img src="https://tinyurl.com/yckek63e" alt="Avatar" class="user-avatar">
+                    <div class="user-name">lgarcia</div>
+                </div>
+                <ul class="user-menu" id="user-dropdown">
+                    <li><a href="perfilPropioPostulante.html">Mi Perfil</a></li>
+                    <li><a href="cerrarSesion.html">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <nav id="sidebarMenu"
+        class="custom-sidebar collapse d-lg-block sidebar collapse .bg-info.bg-gradient custom-shadow">
+        <div class="position-sticky">
+            <div class="list-group list-group-flush mx-3 mt-4 ">
+                <div class="sidebarGroup ">
+                    <div class="border border-primary rounded-2">
+                        <a href="perfilPropioPostulante.html"
+                            class="list-group-item list-group-item-action py-2 ripple"></i><span>Mi Perfil</span></a>
+                        <a href="consultaOfertaLoggeado.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Ofertas
+                                Laborales</span></a>
+                        <a href="consultaUsuarioPostulante.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Usuarios</span></a>
+                        <a href="consultaTipoPublicacionPostulante.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Tipos de
+                                Publicación</span></a>
+                        <a href="consultaPaquetePostulante.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Paquetes de Tipo de
+                                Publicación</span></a>
+                    </div>
+                </div>
+                <div class="sidebarGroup">
+                    <div class="border border-primary rounded-2">
+                        <span class="list-group-item py-2 ripple"><b>Keywords</b></span></a>
+                        <a href="consultaOfertaLoggeado.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Tiempo
+                                Completo</span></a>
+                        <a href="consultaOfertaLoggeado.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Medio
+                                Tiempo</span></a>
+                        <a href="consultaOfertaLoggeado.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Remoto</span></a>
+                        <a href="consultaOfertaLoggeado.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Freelance</span></a>
+                        <a href="consultaOfertaLoggeado.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Temporal</span></a>
+                        <a href="consultaOfertaLoggeado.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Permanente</span></a>
+                        <a href="consultaOfertaLoggeado.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Computacion</span></a>
+                        <a href="consultaOfertaLoggeado.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Administración</span></a>
+                        <a href="consultaOfertaLoggeado.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Logística</span></a>
+                        <a href="consultaOfertaLoggeado.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Contabilidad</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="profile">
+        <div class="profile-header">
+            <img src="https://tinyurl.com/yckek63e" alt="Avatar" class="u-avatar">
+            <div class="u-info">
+                <h1>Lucía García</h1>
+                <p>lgarcia</p>
+                <p>lgarcia85@gmail.com</p>
+            </div>
+        </div>
+        <div class="profile-tabs">
+            <button class="tablink" onclick="openTab('perfil')">Perfil</button>
+            <button class="tablink" onclick="openTab('ofertas')">Postulaciones</button>
+        </div>
+        <div class="tabcontent" id="perfil">
+            <div class="profile-form">
+                <div class="row">
+                    <div class="label">
+                        <label for="nickname">Nickname:</label>
+                    </div>
+                    <div class="info">
+                        <input type="text" id="nickname" value="lgarcia" readonly>
+                        <div class="edit-button" style="visibility: collapse;">
+                            <button onclick="enableEdit('name')"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="info email-info">
+                        <input type="email" id="email" value="lgarcia85@gmail.com" readonly>
+                        <div class="edit-button" style="visibility: collapse;">
+                            <button onclick="enableEdit('name')"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label for="name">Nombre:</label>
+                    </div>
+                    <div class="info">
+                        <input type="text" id="name" value="Lucía" readonly>
+                        <div class="edit-button">
+                            <button onclick="enableEdit('name')"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label for="lastname">Apellido:</label>
+                    </div>
+                    <div class="info">
+                        <input type="text" id="lastname" value="García" readonly>
+                        <div class="edit-button">
+                            <button onclick="enableEdit('lastname')"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label for="pass">Contraseña:</label>
+                    </div>
+                    <div class="info">
+                        <div class="form-group password-toggle">
+                            <input type="password" class="form-control" id="password-input" value="awdrg543" readonly>
+                            <span class="toggle-password" onclick="visibilidadClave()"><i
+                                    class="fas fa-eye-slash"></i></span>
+                        </div>
+                        <div class="edit-button">
+                            <button onclick="enableEdit('password-input')"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label for="fecha">Fecha de Nacimiento:</label>
+                    </div>
+                    <div class="info">
+                        <input type="date" id="fecha" value="1985-03-15" readonly>
+                        <div class="edit-button">
+                            <button onclick="enableEdit('fecha')"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label">
+                        <label for="nacionalidad">Nacionalidad:</label>
+                    </div>
+                    <div class="info">
+                        <input type="text" id="nac" value="Uruguaya" readonly>
+                        <div class="edit-button">
+                            <button onclick="enableEdit('nac')"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-button">
+                    <button type="submit" class="btn btn-primary" id="btnGuardar">Guardar</button>
+                </div>
+            </div>
+        </div>
+        <div class="tabcontent" id="ofertas">
+            <div class="container user-profile">
+                <div class="job-list-title">
+
+                </div>
+                <div class="job-list">
+                    <ul class="job-list">
+                        <li class="job-list-item">
+                            <a href="consultaPostulacion1Postulante.html" class="sinEstilo">
+                                <img src="https://tinyurl.com/45nsf34m" alt="Oferta1">
+                                <div>
+                                    <h3><a href="consultaPostulacion1Postulante.html">Desarrollador Frontend</a></h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        let passwordVisible = false;
+        const toggleButton = document.querySelector('.toggle-password');
+
+        function visibilidadClave() {
+            const passwordInput = document.getElementById('password-input');
+
+            passwordVisible = !passwordVisible;
+            if (passwordVisible) {
+                passwordInput.type = 'text';
+                toggleButton.innerHTML = '<i class="fas fa-eye"></i>';
+            } else {
+                passwordInput.type = 'password';
+                toggleButton.innerHTML = '<i class="fas fa-eye-slash"></i>';
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>consultaOferta</title>
+    <script src="../js/consultaOferta.js"></script>
+    <script src="../js/jsGenerico.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/estilosGenericos.css">
+    <link rel="stylesheet" href="../css/consultaOferta.css">
+
+</head>
+
+<body class="bg-primary-subtle body-center">
+    <header>
+        <nav class="navbar-custom navbar navbar-expand-lg navbar-dark custom-shadow sticky-top" id="navbar-text">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-bag-fill" id="logo"></i>
+                <strong> Trabajo.uy </strong>
+            </a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="inicioSesion.html">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+					<a class="nav-link" href="altaUsuario.html">Registrarse</a>
+				</li>
+            </ul>
+        </nav>
+    </header>
+    <nav id="sidebarMenu"
+        class="custom-sidebar collapse d-lg-block sidebar collapse .bg-info.bg-gradient custom-shadow">
+        <div class="position-sticky">
+            <div class="list-group list-group-flush mx-3 mt-4 ">
+                <div class="sidebarGroup ">
+                    <div class="border border-primary rounded-2">
+                        <a href="consultaOfertaVisitante.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Ofertas
+                                Laborales</span></a>
+                        <a href="consultaUsuario.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Usuarios</span></a>
+                        <a href="consultaTipoPublicacionVisitante.html"
+                        class="list-group-item list-group-item-action py-2 ripple"><span>Tipos de
+                            Publicación</span></a>
+                        <a href="consultaPaqueteVisitante.html" class="list-group-item list-group-item-action py-2 ripple"><span>Paquetes de Tipo de
+                            Publicación</span></a>
+                    </div>
+                </div>
+                <div class="sidebarGroup">
+                    <div class="border border-primary rounded-2">
+                        <span class="list-group-item py-2 ripple"><b>Keywords</b></span></a>
+                        <a href="consultaOfertaVisitante.html" class="list-group-item list-group-item-action py-2 ripple"><span>Tiempo
+                                Completo</span></a>
+                        <a href="consultaOfertaVisitante.html" class="list-group-item list-group-item-action py-2 ripple"><span>Medio
+                                Tiempo</span></a>
+                        <a href="consultaOfertaVisitante.html" class="list-group-item list-group-item-action py-2 ripple"><span>Remoto</span></a>
+                        <a href="consultaOfertaVisitante.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Freelance</span></a>
+                        <a href="consultaOfertaVisitante.html" class="list-group-item list-group-item-action py-2 ripple"><span>Temporal</span></a>
+                        <a href="consultaOfertaVisitante.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Permanente</span></a>
+                        <a href="consultaOfertaVisitante.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Computacion</span></a>
+                        <a href="consultaOfertaVisitante.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Administración</span></a>
+                        <a href="consultaOfertaVisitante.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Logística</span></a>
+                        <a href="consultaOfertaVisitante.html"
+                            class="list-group-item list-group-item-action py-2 ripple"><span>Contabilidad</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5" style="width: 25rem;">
+        <div class="rounded-5 p-4 text-white bg-primary">
+            <form method="post" class="form">
+                <div class="form-group">
+                    <label for="inputNombre">Nombre</label>
+                    <input type="Text" class="form-control" id="inputNombre" value="Desarrollador Frontend" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="inputDescripcion">Descripcion</label>
+                    <textarea name="message" rows="2" cols="30" class="form-control" id="inputDescripcion"
+                        placeholder="Descripcion" readonly></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="inputInicio">Horario inicio</label>
+                    <input type="time" class="form-control" id="inputInicio" value="09:00" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="inputFin">Horario fin</label>
+                    <input type="time" class="form-control" value="18:00" id="inputFin" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="inputRenumeracion">Remuneracion</label>
+                    <input type="number" class="form-control" id="inputRenumeracion" value="90000" min="0"
+                        oninput="validity.valid||(value='');" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="inputDepartamento">Departamento</label>
+                    <input type="text" class="form-control" id="inputDepartamento" value="Departamento" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="inputCiudad">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCiudad" value="Ciudad" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="inputImagen">Imagen</label>
+                    <input type="url" class="form-control" id="inputImagen" value="https://tinyurl.com/45nsf34m"
+                        readonly>
+                </div>
+                <div class="form-group">
+                    <label for="membership" class="">Keywords</label>
+                    <select name="membership" id="membership" class="form-control dropdown">
+                        <option value="Tiempo Completo">Tiempo Completo</option>
+                        <option value="Medio Completo">Medio Completo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Fecha de alta</label>
+                    <input type="date" class="form-control" value="2023-08-14" id="date" readonly>
+                </div>
+                <div class="form-group btn-pad">
+                    <a href="consultaOfertaVisitante.html">
+                        <button type="button" class="btn btn-light btn-lg">Ok</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+
+.card{
+    padding-right: 2%;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.mainContainer{
+    transition: 0.5s;
+}
+
+.mainContainer#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 5px, 30px, rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#foto{
+  max-width: 20%;
+  height: auto;
+  float:right;
+  margin:0%;
+	}
+h3{
+	padding-right: 10%;
+	margin-right: 20%;
+}
+.card{
+	padding: 10px;
+	margin-bottom: 10px;
+}
+h2 a{
+	color: inherit;
+  	text-decoration: inherit;
+}
+h3 a{
+	color: inherit;
+  	text-decoration: inherit;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-info img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 4px solid #3498db;
+}
+
+.user-info h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #333333;
+}
+
+.user-info p {
+    font-size: 18px;
+    margin: 0;
+    color: #777777;
+}
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+   max-width:1200px;
+  }
+}

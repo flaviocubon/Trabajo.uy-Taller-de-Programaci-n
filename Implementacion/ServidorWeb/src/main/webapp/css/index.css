@@ -1,0 +1,13 @@
+.headerInicio{
+    text-align: center!important;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 800px;
+}

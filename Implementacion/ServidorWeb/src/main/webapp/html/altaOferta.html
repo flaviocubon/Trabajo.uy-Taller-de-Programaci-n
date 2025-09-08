@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>altaOferta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/estilosGenericos.css">
+    <link rel="stylesheet" href="../css/altaOferta.css">
+</head>
+
+<body class="bg-primary-subtle body-center">
+    <header>
+        <nav class="navbar-custom navbar navbar-expand-lg navbar-dark custom-shadow sticky-top" id="navbar-text">
+            <a class="navbar-brand" href="indexLoggeadoEmpresa.html">
+                <i class="bi bi-bag-fill" id="logo"></i>
+                <strong> Trabajo.uy </strong>
+            </a>
+            <div class="user-info-2">
+                    <div id="user-dropdown-toggle" class="user-toggle">
+                        <img src="https://tinyurl.com/mr2hcufa" alt="Avatar" class="user-avatar">
+                        <div class="user-name">EcoTech</div>
+                    </div>
+                    <ul class="user-menu" id="user-dropdown">
+                        <li><a href="perfilPropioEmpresa.html">Mi Perfil</a></li>
+                        <li><a href="cerrarSesion.html">Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+    <nav id="sidebarMenu" class="custom-sidebar collapse d-lg-block sidebar collapse .bg-info.bg-gradient custom-shadow" style="padding-top: 10%;">
+        <div class="position-sticky">
+          <div class="list-group list-group-flush mx-3 mt-4 ">
+            <div class="sidebarGroup ">
+              <div class="border border-primary rounded-2">
+                <a href="perfilPropioEmpresa.html" class="list-group-item list-group-item-action py-2 ripple"></i><span>Mi Perfil</span></a>
+                <a href="consultaOfertaEmpresa.html"
+                class="list-group-item list-group-item-action py-2 ripple"><span>Ofertas
+                    Laborales</span></a>
+                <a href="altaOferta.html" class="list-group-item list-group-item-action py-2 ripple"><span>Crear
+                                Oferta</span></a>
+                <a href="consultaUsuarioEmpresa.html"
+                    class="list-group-item list-group-item-action py-2 ripple"><span>Usuarios</span></a>
+                <a href="consultaTipoPublicacionEmpresa.html" class="list-group-item list-group-item-action py-2 ripple"><span>Tipos de
+                    Publicación</span></a>
+                <a href="consultaPaqueteEmpresa.html" class="list-group-item list-group-item-action py-2 ripple"><span>Paquetes de Tipo de
+                    Publicación</span></a>
+              </div>
+            </div>
+            <div class="sidebarGroup">
+              <div class="border border-primary rounded-2">
+                <span class="list-group-item py-2 ripple"><b>Keywords</b></span></a>
+                <a href="consultaOfertaEmpresa.html" class="list-group-item list-group-item-action py-2 ripple"><span>Tiempo Completo</span></a>
+                <a href="consultaOfertaEmpresa.html" class="list-group-item list-group-item-action py-2 ripple"><span>Medio Tiempo</span></a>
+                <a href="consultaOfertaEmpresa.html" class="list-group-item list-group-item-action py-2 ripple"><span>Remoto</span></a>
+                <a href="consultaOfertaEmpresa.html" class="list-group-item list-group-item-action py-2 ripple"><span>Freelance</span></a>
+                <a href="consultaOfertaEmpresa.html" class="list-group-item list-group-item-action py-2 ripple"><span>Temporal</span></a>
+                <a href="consultaOfertaEmpresa.html" class="list-group-item list-group-item-action py-2 ripple"><span>Permanente</span></a>
+                <a href="consultaOfertaEmpresa.html" class="list-group-item list-group-item-action py-2 ripple"><span>Computacion</span></a>
+                <a href="consultaOfertaEmpresa.html" class="list-group-item list-group-item-action py-2 ripple"><span>Administración</span></a>
+                <a href="consultaOfertaEmpresa.html" class="list-group-item list-group-item-action py-2 ripple"><span>Logística</span></a>
+                <a href="consultaOfertaEmpresa.html" class="list-group-item list-group-item-action py-2 ripple"><span>Contabilidad</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <div class="container mt-5" style="width: 25rem;">
+        <div class="rounded-5 p-4 text-white bg-primary">
+            <form class="form ">
+                <div class="form-group">
+                    <label for="membership">Elegir tipo de oferta laboral</label>
+                    <select name="membership" class="form-control" id="membership">
+                        <option value="free">Free</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver" selected>Silver</option>
+                        <option value="Gold">Gold</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="inputNombre">Nombre</label>
+                    <input type="Text" class="form-control" id="inputNombre" placeholder="Nombre">
+                </div>
+                <div class="form-group">
+                    <label for="inputDescripcion">Descripcion</label>
+                    <textarea name="message" rows="2" cols="30" class="form-control" id="inputDescripcion"
+                        placeholder="Descripcion"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="inputInicio">Horario inicio</label>
+                    <input type="time" class="form-control" id="inputInicio">
+                </div>
+                <div class="form-group">
+                    <label for="inputFin">Horario fin</label>
+                    <input type="time" class="form-control" id="inputFin">
+                </div>
+                <div class="form-group">
+                    <label for="inputRenumeracion">Remuneracion</label>
+                    <input type="number" class="form-control" id="inputRenumeracion" placeholder="Remuneracion" min="0"
+                        oninput="validity.valid||(value='');">
+                </div>
+                <div class="form-group">
+                    <label for="inputDepartamento">Departamento</label>
+                    <input type="text" class="form-control" id="inputDepartamento" placeholder="Departamento">
+                </div>
+                <div class="form-group">
+                    <label for="inputCiudad">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCiudad" placeholder="Ciudad">
+                </div>
+                <div class="form-group">
+                    <label for="inputImagen">Imagen</label>
+                    <input type="url" class="form-control" id="inputImagen" placeholder="Url">
+                </div>
+                <div class="form-group" style>
+                    <label for="multiple-checkboxes">Keywords</label>
+                    <div id="elcheckbox" style="padding-top: 2px; width: 100%;">
+                        <select name="keywords" id="multiple-checkboxes" class="form-control dropdown" multiple="multiple">
+                            <option value="php">PHP</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="java">Java</option>
+                            <option value="sql">SQL</option>
+                            <option value="jquery">Jquery</option>
+                            <option value=".net">.Net</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="membership" class="">Elegir paquete </label>
+                    <select name="membership" id="membership" class="form-control dropdown">
+                        <option value="free">Sin paquete</option>
+                        <option value="free">Basico</option>
+                    </select>
+                </div>
+                <div class="form-group btn-pad">
+                    <button type="button" class="btn btn-light btn-lg">Confirmar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="../js/multiSelectScripts/jquery.min.js"></script>
+    <script src="../js/multiSelectScripts/popper.js"></script>
+    <script src="../js/multiSelectScripts/bootstrap.min.js"></script>
+    <script src="../js/multiSelectScripts/bootstrap-multiselect.js"></script>
+    <script src="../js/multiSelectScripts/main.js"></script>
+    <script src="../js/jsGenerico.js"></script>
+</body>
+
+</html>
+<!-- fondo borroso de color mas claro y bien centrado -->

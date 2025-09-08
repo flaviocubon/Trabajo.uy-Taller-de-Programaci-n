@@ -1,0 +1,58 @@
+#submitBtn{
+    padding-top: 20px;
+}
+
+.divPostulacion {
+    height: 800px;
+    z-index: 0;
+}
+
+.formOferta {
+    height: 100%;
+    z-index: 0;
+}
+
+.card-oferta {
+    height: 65%;
+    z-index: 0; 
+}
+
+.card{
+    width: 550px;
+    position: relative;
+    z-index: 0;
+}
+
+.card-img-top{
+    height: 100%;
+    width: 75%;
+    align-self: center;
+    background-color: blue;
+    z-index: 0;
+}
+
+@media (max-width: 991px) and (orientation: portrait){
+	#motivacion{
+		font-size: 4vw;	
+	}
+	
+	#cv{
+		font-size: 4vw;
+	}
+	
+	.btn{
+		font-size: 3vw;
+		border-radius: 12px;
+	}
+	h5{
+		font-size: 5vw;
+	}
+	.divPostulacion{
+		max-width: 90vw!important;
+		width: 100%!important;
+	}
+	.card{
+		width: 100%;
+	}
+}
+

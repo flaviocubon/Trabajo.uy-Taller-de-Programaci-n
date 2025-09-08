@@ -1,0 +1,11 @@
+java -cp .\lib\hsqldb\hsqldb.jar org.hsqldb.util.DatabaseManagerSwing
+
+
+
+#Type: HSQL Database Engine Standlone
+#URL: jdbc:hsqldb:file:TrabajoDB
+#User: SA
+
+#NombreBase: TrabajouyDB
+
+#DROP SCHEMA PUBLIC CASCADE

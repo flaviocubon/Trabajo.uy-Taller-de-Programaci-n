@@ -1,0 +1,365 @@
+
+.card{
+    padding-right: 2%;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.mainContainer{
+    transition: 0.5s;
+}
+
+.mainContainer#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 5px, 30px, rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #6cace9;
+}
+
+.job-list {
+    list-style: none;
+    padding: 0;
+    background-color: #e6f7ff;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+}
+
+.scrolling-section:not(.mobile) .job-list {
+	display: flex;
+    justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 100%;
+	
+}
+
+.scrolling-section:not(.mobile) .job-list-item {
+	width: 20vw;
+	height: 250px;
+}
+
+.job-list a.text-reset{
+    text-decoration: none;
+}
+
+.job-list-title {
+    background-color: #3498db; 
+    color: #ffffff; 
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+@media (max-width: 991px){
+	.job-list-title {
+		font-size: calc(2.5rem + .9vw);
+	}
+}
+.job-list-item {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-list-item img {
+    max-height: 100%;
+    max-width: min(10vw, 400px);
+	min-height: 6rem;
+ 	width: auto;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;    margin-left: auto;    margin-right: auto;
+}
+
+.scrolling-section.mobile .job-list .job-list-item img {
+    padding: 0;
+    max-height: min(20vh, 400px);
+    max-width: 100%;
+ 	width: auto;
+    height: auto;
+}
+
+.job-list-item h2 {
+    font-size: calc(2.5rem + .9vw);
+}
+
+.scrolling-section:not(.mobile) .job-list-item h2 {
+    font-size: calc(1rem + .4vw);
+}
+
+.job-list-item h3 {
+    font-size: 20px;
+    margin: 0;		
+    color: #333333;
+}
+
+.job-list-item h4 {
+    font-size: calc(2rem + .3vw);
+}
+
+.scrolling-section:not(.mobile) .job-list-item h4 {
+    font-size: calc(0.8rem + .3vw);
+}
+
+.job-list-item h5 {
+    font-size: 1rem + .1vw;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.scrolling-section:not(.mobile) h5 {
+    font-size: calc(0.8rem + .1vw);
+}
+
+.job-list-item p {
+    font-size: 16px;
+    margin: 0;
+    color: #777777;
+}
+/* Lo de arriba funciona bien*/
+
+.profile {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.u-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #007bff;
+}
+
+.u-info h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.u-info p {
+    margin: 5px 0;
+}
+
+.profile-tabs {
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.tablink {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+}
+.tablink:before,
+.tablink:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #000;
+}
+
+.tablink:before {
+    left: 0;
+}
+
+.tablink:after {
+    right: 0;
+}
+
+.tablink.active {
+    background-color: #fff;
+    color: #007bff;
+}
+
+.tablink.active:before,
+.tablink.active:after {
+    border-color: #fff transparent transparent transparent;
+}
+.tabcontent {
+    display: none;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border: 1px solid #ccc;
+    border-radius: 0 0 4px 4px;
+    margin-top: -1px; 
+}
+
+#perfil h2 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.profile-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 0;
+}
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.label {
+    flex: 1;
+    text-align: left;
+    margin-right: 10px;
+}
+.profile-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.profile-form .info {
+    flex: 2;
+    margin-bottom: 10px;
+}
+.info {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+.profile-form .edit-button {
+    flex: 1;
+    text-align: right;
+}
+.profile-form input[type="text"],
+.profile-form input[type="password"],
+.profile-form input[type="date"],
+.profile-form textarea,
+.email-info input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.input-text input[type="text"], .email-info input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.profile-form textarea {
+    resize: vertical;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+.edit-button {
+    flex: 1;
+    text-align: left;
+    margin: 5px;
+}
+.edit-button button {
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.edit-button button:hover {
+    background-color: transparent;
+    color: #007bff;
+}
+
+.edit-button button::before {
+    content: "\270E";
+    font-size: 18px;
+}
+
+.scrolling-section {
+    background-color: #fff; /* Set the background color as needed */
+    padding: 20px;
+    margin-top: -20px; /* Negative margin to overlap with the fixed section */
+    position: relative;
+    z-index: 0; /* Ensure the scrolling section is on top */
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds max height */
+}
+.scrolling-section.mobile {
+    padding: 0.5rem 0 0 0;
+    background: transparent;
+}
+
+.scrolling-section.mobile .job-list {
+    padding: 0;
+    background: inherit;
+}
+
+.linkCard{
+	&::after{
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+
+*,*:before,*:after {
+	box-sizing: border-box;
+}

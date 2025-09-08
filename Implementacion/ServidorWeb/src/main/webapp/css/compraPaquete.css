@@ -1,0 +1,36 @@
+.divPostulacion {
+    height: 700px;
+    z-index: 0;
+}
+
+.formOferta {
+    height: 100%;
+    z-index: 0;
+}
+
+.card-oferta {
+    height: 80%;
+    z-index: 0; 
+}
+
+.card{
+    width: 550px;
+    position: relative;
+    z-index: 0;
+}
+
+.card-img-top{
+    height: 60%;
+    width: 60%;
+    align-self: center;
+    background-color: blue;
+    z-index: 0;
+}
+
+#cancelBtn{
+    padding-left: 10px;
+}
+
+.btnsCompra{
+    padding-top: 30px;
+}
